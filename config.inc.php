@@ -34,14 +34,14 @@ require_once 'Typecho/Common.php';
 Typecho_Common::init();
 
 /** 定义数据库参数 */
-$db = new Typecho_Db('Mysql', 'typecho_');
+$db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
-  'host' => 'sql.freedb.tech',
-  'user' => 'freedb_typecho123231',
-  'password' => '@7eY*Y7hBeR&Dap',
+  'host' => '数据库地址',
+  'user' => '数据库用户',
+  'password' => '数据库密码',
   'charset' => 'utf8mb4',
   'port' => '3306',
-  'database' => 'freedb_myccftypecho',
+  'database' => '数据库名',
   'engine' => 'MyISAM',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
