@@ -93,7 +93,6 @@ class Typecho_Db_Adapter_Pdo_Mysql extends Typecho_Db_Adapter_Pdo
                 $sql['table'] = "{$sql['table']} {$op} JOIN {$table} ON {$condition}";
             }
         }
-        echo($sql[0]);
         $sql['limit'] = (0 == strlen($sql['limit'])) ? NULL : ' LIMIT ' . $sql['limit'];
         $sql['offset'] = (0 == strlen($sql['offset'])) ? NULL : ' OFFSET ' . $sql['offset'];
 
